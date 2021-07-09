@@ -35,7 +35,16 @@
     # What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-    pass
+    if (len(input1) == len(input2)):
+        print(input1, input2)
+
+    elif (len(input1) < len(input2)):
+        print(input2)
+
+    else:
+        print(input1)
+
+    return one
 
 
     # <QUESTION 2>
@@ -61,7 +70,7 @@ def one(input1, input2):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
-    pass
+    input.split()
 
 
     # <QUESTION 3>
@@ -83,9 +92,16 @@ def two(input):
 
     # No Hints for this question
 
-def three(arg1):
-    pass
-
+def three(num):
+    if (num % 3 == 0) and (num % 5 == 0):
+        return "fizzbuzz"
+    elif num % 3 == 0:
+        return "fizz"
+    elif num % 5 == 0:
+        return "buzz"
+    
+    else:
+        return "null"
 
     # <QUESTION 4>
 
@@ -177,9 +193,12 @@ def six(input):
 
     # How do we ignore case in a String? help(str) may offer some insight.
 
-def seven(input):
-    pass
-
+def countvowels(string):
+    num_vowels = 0
+    for char in string:
+        if char in "aeiouAEIOU":
+           num_vowels = num_vowels + 1
+    return int(num_vowels)
 
     # <QUESTION 8>
 

@@ -225,7 +225,7 @@ def countvowels(string):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    pass
+    multiplyList(input)
 
 
     # <QUESTION 9>

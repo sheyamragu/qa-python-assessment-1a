@@ -175,8 +175,17 @@ def five(input):
 
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
-def six(input):
-    pass
+def six(word):
+    if "cie" in word:
+        return False
+    elif "cei" in word:
+        return True
+    elif "ei" in word:
+        return False
+    elif "ie" in word:
+        return True
+    else:
+        return True
 
 
     # <QUESTION 7>
